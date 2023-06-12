@@ -310,6 +310,13 @@
     </url>
 
     <url>
+        <loc>https://niziming.github.io/tags/Vuex/</loc>
+        <lastmod>2023-05-20T12:43:10.760Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://niziming.github.io/tags/Windows/</loc>
         <lastmod>2023-05-20T12:43:10.760Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -318,13 +325,6 @@
 
     <url>
         <loc>https://niziming.github.io/tags/Windows%E7%AB%AF%E5%8F%A3/</loc>
-        <lastmod>2023-05-20T12:43:10.760Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://niziming.github.io/tags/Vuex/</loc>
         <lastmod>2023-05-20T12:43:10.760Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -382,6 +382,13 @@
     <url>
         <loc>https://niziming.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA/</loc>
         <lastmod>2023-05-20T12:43:10.772Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://niziming.github.io/tags/clash/</loc>
+        <lastmod>2023-06-12T11:56:50.118Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
