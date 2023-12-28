@@ -2,13 +2,6 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://niziming.github.io/tags/pve/</loc>
-        <lastmod>2023-04-02T01:46:54.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://niziming.github.io/tags/PEV/</loc>
         <lastmod>2023-04-02T01:47:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -303,13 +296,6 @@
     </url>
 
     <url>
-        <loc>https://niziming.github.io/tags/Vuex/</loc>
-        <lastmod>2023-05-20T12:43:10.760Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://niziming.github.io/tags/Windows/</loc>
         <lastmod>2023-05-20T12:43:10.760Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -318,6 +304,13 @@
 
     <url>
         <loc>https://niziming.github.io/tags/Windows%E7%AB%AF%E5%8F%A3/</loc>
+        <lastmod>2023-05-20T12:43:10.760Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://niziming.github.io/tags/Vuex/</loc>
         <lastmod>2023-05-20T12:43:10.760Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -380,13 +373,6 @@
     </url>
 
     <url>
-        <loc>https://niziming.github.io/tags/Linux/</loc>
-        <lastmod>2023-12-28T04:55:34.589Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://niziming.github.io/tags/curl/</loc>
         <lastmod>2023-12-28T04:55:34.589Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -395,7 +381,42 @@
 
     <url>
         <loc>https://niziming.github.io/tags/Docker/</loc>
-        <lastmod>2023-12-28T05:09:44.958Z</lastmod>
+        <lastmod>2023-12-28T08:33:13.546Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://niziming.github.io/tags/Linux/</loc>
+        <lastmod>2023-12-28T08:33:13.546Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://niziming.github.io/tags/ubuntu/</loc>
+        <lastmod>2023-12-28T08:33:13.546Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://niziming.github.io/tags/PVE/</loc>
+        <lastmod>2023-12-28T08:33:58.479Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://niziming.github.io/tags/wsl/</loc>
+        <lastmod>2023-12-28T10:04:23.663Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://niziming.github.io/tags/wsa/</loc>
+        <lastmod>2023-12-28T10:04:23.663Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
