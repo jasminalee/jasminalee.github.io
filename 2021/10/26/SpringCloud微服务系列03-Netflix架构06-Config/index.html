@@ -16,11 +16,11 @@
     <title>
         🔥
         
-          SpringCloud微服务系列03-Netflix架构06-Config - 十渊 | Blog
+          SpringCloud微服务系列03-Netflix架构06-Config - 瘦月 | Blog
         
     </title>
 
-    <link rel="canonical" href="https://niziming.github.io/2021/10/26/SpringCloud微服务系列03-Netflix架构06-Config/">
+    <link rel="canonical" href="https://jasminalee.github.io/2021/10/26/SpringCloud微服务系列03-Netflix架构06-Config/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -96,9 +96,9 @@
                             
                               <a class="tag" href="/tags/#SpringCloud" title="SpringCloud">SpringCloud</a>
                             
-                              <a class="tag" href="/tags/#Netflix" title="Netflix">Netflix</a>
-                            
                               <a class="tag" href="/tags/#微服务" title="微服务">微服务</a>
+                            
+                              <a class="tag" href="/tags/#Netflix" title="Netflix">Netflix</a>
                             
                               <a class="tag" href="/tags/#配置中心" title="配置中心">配置中心</a>
                             
@@ -108,7 +108,7 @@
                         <h1>SpringCloud微服务系列03-Netflix架构06-Config</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
-                            Posted by 十渊 on
+                            Posted by 瘦月 on
                             2021-10-26
                         </span>
                     </div>
@@ -133,7 +133,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">十渊</a>
+            <a class="navbar-brand" href="/">瘦月</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -163,14 +163,14 @@
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
+                            <a href="/tags/">Tags</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/tags/">Tags</a>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
@@ -243,7 +243,7 @@ spring.cloud.config.server.git.username：访问git仓库的用户名<br>
 spring.cloud.config.server.git.password：访问git仓库的用户密码<br>
 如果Git仓库为公开仓库，可以不填写用户名和密码，如果是私有仓库需要填写，本例子是公开仓库，放心使用。</p>
 <p><strong>关于git仓库的使用问题,因为众所周知的原因github 访问不稳定会出现443,这里简建议使用国内的git仓库,不让会出现很多问题</strong></p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">8707</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">profiles:</span></span><br><span class="line">    <span class="attr">active:</span> <span class="string">common</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">config-server-8707</span></span><br><span class="line"><span class="comment">#  spring.cloud.config.server.git.uri：配置git仓库地址</span></span><br><span class="line"><span class="comment">#  spring.cloud.config.server.git.searchPaths：配置仓库路径</span></span><br><span class="line"><span class="comment">#  spring.cloud.config.label：配置仓库的分支</span></span><br><span class="line"><span class="comment">#  spring.cloud.config.server.git.username：访问git仓库的用户名</span></span><br><span class="line"><span class="comment">#  spring.cloud.config.server.git.password：访问git仓库的用户密码</span></span><br><span class="line"><span class="comment">#  如果Git仓库为公开仓库，可以不填写用户名和密码，如果是私有仓库需要填写，本例子是公开仓库，放心使用。</span></span><br><span class="line">  <span class="attr">cloud:</span></span><br><span class="line">    <span class="attr">config:</span></span><br><span class="line">      <span class="attr">server:</span></span><br><span class="line">        <span class="attr">git:</span></span><br><span class="line">          <span class="attr">uri:</span> <span class="string">https://gitee.com/niziming/SpringCloud-Seed.git</span></span><br><span class="line">          <span class="attr">search-paths:</span> <span class="string">config-repo</span></span><br><span class="line">          <span class="attr">force-pull:</span> <span class="literal">true</span></span><br><span class="line">        <span class="attr">default-label:</span> <span class="string">main</span></span><br><span class="line"></span><br><span class="line"><span class="attr">logging:</span></span><br><span class="line">  <span class="attr">level:</span></span><br><span class="line">    <span class="attr">cn.zm:</span> <span class="string">debug</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># eureka</span></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="attr">serviceUrl:</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://localhost:8700/eureka/</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">8707</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">profiles:</span></span><br><span class="line">    <span class="attr">active:</span> <span class="string">common</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">config-server-8707</span></span><br><span class="line"><span class="comment">#  spring.cloud.config.server.git.uri：配置git仓库地址</span></span><br><span class="line"><span class="comment">#  spring.cloud.config.server.git.searchPaths：配置仓库路径</span></span><br><span class="line"><span class="comment">#  spring.cloud.config.label：配置仓库的分支</span></span><br><span class="line"><span class="comment">#  spring.cloud.config.server.git.username：访问git仓库的用户名</span></span><br><span class="line"><span class="comment">#  spring.cloud.config.server.git.password：访问git仓库的用户密码</span></span><br><span class="line"><span class="comment">#  如果Git仓库为公开仓库，可以不填写用户名和密码，如果是私有仓库需要填写，本例子是公开仓库，放心使用。</span></span><br><span class="line">  <span class="attr">cloud:</span></span><br><span class="line">    <span class="attr">config:</span></span><br><span class="line">      <span class="attr">server:</span></span><br><span class="line">        <span class="attr">git:</span></span><br><span class="line">          <span class="attr">uri:</span> <span class="string">https://gitee.com/jasminalee/SpringCloud-Seed.git</span></span><br><span class="line">          <span class="attr">search-paths:</span> <span class="string">config-repo</span></span><br><span class="line">          <span class="attr">force-pull:</span> <span class="literal">true</span></span><br><span class="line">        <span class="attr">default-label:</span> <span class="string">main</span></span><br><span class="line"></span><br><span class="line"><span class="attr">logging:</span></span><br><span class="line">  <span class="attr">level:</span></span><br><span class="line">    <span class="attr">cn.zm:</span> <span class="string">debug</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># eureka</span></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="attr">serviceUrl:</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://localhost:8700/eureka/</span></span><br></pre></td></tr></table></figure>
 <h3 id="上传配置到git仓库">上传配置到git仓库</h3>
 <p>这里准备的是mybatisplusapp这个模块的配置,方便后面client测试</p>
 <p><img src="/2021/10/26/SpringCloud微服务系列03-Netflix架构06-Config/image-20211026141958208.png" alt="image-20211026141958208"></p>
@@ -286,7 +286,7 @@ spring.cloud.config.server.git.password：访问git仓库的用户密码<br>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">8701</span></span><br><span class="line"><span class="comment"># eureka</span></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="attr">serviceUrl:</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://localhost:8700/eureka/</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">service-app</span></span><br><span class="line">  <span class="attr">cloud:</span></span><br><span class="line">    <span class="attr">config:</span></span><br><span class="line">      <span class="attr">uri:</span> <span class="string">http://localhost:8707/</span></span><br><span class="line">      <span class="attr">label:</span> <span class="string">main</span></span><br><span class="line">      <span class="attr">profile:</span> <span class="string">common,</span> <span class="string">plus</span></span><br></pre></td></tr></table></figure>
 <h3 id="启动测试client">启动测试client</h3>
 <p>根据日志发现正常启动应用了配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">2021-10-26 14:09:06.171  INFO 3140 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-app, profiles=[common, plus], label=main, version=6c97254734e49250d225b9c003dc80802572c38b, state=null</span><br><span class="line">2021-10-26 14:09:06.172  INFO 3140 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource &#123;name=&apos;bootstrapProperties-configClient&apos;&#125;, BootstrapPropertySource &#123;name=&apos;bootstrapProperties-https://gitee.com/niziming/SpringCloud-Seed.git/config-repo/application-plus.yml&apos;&#125;, BootstrapPropertySource &#123;name=&apos;bootstrapProperties-https://gitee.com/niziming/SpringCloud-Seed.git/config-repo/application-common.yml&apos;&#125;]</span><br><span class="line">2021-10-26 14:09:06.176  INFO 3140 --- [           main] cn.zm.MybatisPlusApp                     : No active profile set, falling back to default profiles: default</span><br><span class="line">2021-10-26 14:09:07.324  INFO 3140 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=cf37de59-8d09-3886-8e16-9a0f7155dd1f</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">2021-10-26 14:09:06.171  INFO 3140 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-app, profiles=[common, plus], label=main, version=6c97254734e49250d225b9c003dc80802572c38b, state=null</span><br><span class="line">2021-10-26 14:09:06.172  INFO 3140 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource &#123;name=&apos;bootstrapProperties-configClient&apos;&#125;, BootstrapPropertySource &#123;name=&apos;bootstrapProperties-https://gitee.com/jasminalee/SpringCloud-Seed.git/config-repo/application-plus.yml&apos;&#125;, BootstrapPropertySource &#123;name=&apos;bootstrapProperties-https://gitee.com/jasminalee/SpringCloud-Seed.git/config-repo/application-common.yml&apos;&#125;]</span><br><span class="line">2021-10-26 14:09:06.176  INFO 3140 --- [           main] cn.zm.MybatisPlusApp                     : No active profile set, falling back to default profiles: default</span><br><span class="line">2021-10-26 14:09:07.324  INFO 3140 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=cf37de59-8d09-3886-8e16-9a0f7155dd1f</span><br></pre></td></tr></table></figure>
 <p>点击knife4j文档工具查看接口是否正常使用</p>
 <p><img src="/2021/10/26/SpringCloud微服务系列03-Netflix架构06-Config/image-20211026142801504.png" alt="image-20211026142801504"></p>
 <h3 id="eureka状态">eureka状态</h3>
@@ -359,9 +359,9 @@ spring.cloud.config.server.git.password：访问git仓库的用户密码<br>
                        
                           <a class="tag" href="/tags/#SpringCloud" title="SpringCloud">SpringCloud</a>
                         
-                          <a class="tag" href="/tags/#Netflix" title="Netflix">Netflix</a>
-                        
                           <a class="tag" href="/tags/#微服务" title="微服务">微服务</a>
+                        
+                          <a class="tag" href="/tags/#Netflix" title="Netflix">Netflix</a>
                         
                           <a class="tag" href="/tags/#配置中心" title="配置中心">配置中心</a>
                         
@@ -378,9 +378,9 @@ spring.cloud.config.server.git.password：访问git仓库的用户密码<br>
                 <ul class="list-inline">
 
                     
-                        <li><a href="https://www.douban.com/people/80901919/" target="_blank">豆瓣 十渊</a></li>
+                        <li><a href="https://www.douban.com/people/80901919/" target="_blank">豆瓣 瘦月</a></li>
                     
-                        <li><a href="https://github.com/niziming" target="_blank">GitHub niziming</a></li>
+                        <li><a href="https://github.com/jasminalee" target="_blank">GitHub jasminalee</a></li>
                     
                 </ul>
                 
@@ -461,7 +461,7 @@ spring.cloud.config.server.git.password：访问git仓库的用户密码<br>
 
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; 十渊 2023
+                    Copyright &copy; 瘦月 2024
                     <br>
                     Theme by <a href="http://huangxuan.me">Hux</a>
                     <span style="display: inline-block; margin: 0 5px;">
@@ -476,7 +476,7 @@ spring.cloud.config.server.git.password：访问git仓库的用户密码<br>
                     <iframe
                         style="margin-left: 2px; margin-bottom:-5px;"
                         frameborder="0" scrolling="0" width="91px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=niziming&amp;repo=hexo-blog&amp;type=star&amp;count=true" >
+                        src="https://ghbtns.com/github-btn.html?user=jasminalee&amp;repo=hexo-blog&amp;type=star&amp;count=true" >
                     </iframe>
                 </p>
             </div>
@@ -555,7 +555,7 @@ spring.cloud.config.server.git.password：访问git仓库的用户密码<br>
 <script>
     // dynamic User by Hux
     var _gaId = 'UA-XXXXXXXX-X';
-    var _gaDomain = 'https://niziming.github.io/';
+    var _gaDomain = 'https://jasminalee.github.io/';
     // Originial
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
