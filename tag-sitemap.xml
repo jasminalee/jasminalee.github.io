@@ -135,13 +135,6 @@
     </url>
 
     <url>
-        <loc>https://jasminalee.github.io/tags/Blog/</loc>
-        <lastmod>2023-05-20T12:43:10.760Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://jasminalee.github.io/tags/Vuex/</loc>
         <lastmod>2023-05-20T12:43:10.760Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -157,6 +150,13 @@
 
     <url>
         <loc>https://jasminalee.github.io/tags/Windows%E7%AB%AF%E5%8F%A3/</loc>
+        <lastmod>2023-05-20T12:43:10.760Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://jasminalee.github.io/tags/Blog/</loc>
         <lastmod>2023-05-20T12:43:10.760Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -401,14 +401,14 @@
     </url>
 
     <url>
-        <loc>https://jasminalee.github.io/tags/Netflix/</loc>
+        <loc>https://jasminalee.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</loc>
         <lastmod>2024-03-16T02:31:52.639Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://jasminalee.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</loc>
+        <loc>https://jasminalee.github.io/tags/Netflix/</loc>
         <lastmod>2024-03-16T02:31:52.639Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
